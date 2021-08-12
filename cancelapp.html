@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change or Cancel</title>
+<link rel="stylesheet" href="a4.css">
+<script src="a4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="logo.png" alt="Logo">
+    <div class="left" style="margin-top: 5%;">
+        <strong style="font-size: larger;">Change or Cancel your</strong><br>
+        <strong style="margin-left: -15%; font-size: larger;"> appointment</strong>
+        <div>
+            <button onclick="window.location.href='page1.html'" class="back" style="margin-top: 40%;">&#8592; Back</button>
+        </div>
+    </div>
+    <div class="right" style="margin-top: 5%;">
+        <form id="form">
+            <label for="dose_type" style="font-weight: bold;">Appointment to update</label>
+            <br><p></p>
+            <select name="dose_type" id="update">
+            <option value="">Select</option>
+            <option value="First Dose">First Dose</option>
+            <option value="Second Dose">Second Dose</option>
+            </select>
+            <br><br>
+            <label for="dates" style="font-weight: bold;">Select preferred appointment time</label>
+            <br><p></p>
+            <select name="dates" id="dates" onclick="appointments();">
+            <option value="">Select</option>
+            </select>
+            <br><br>
+            <strong>Select available location</strong>
+            <p></p>
+            <div>
+                <div class="grey_radio">
+                    <input type="radio" name="location" value="Toronto Downtown Clinic"/>
+                    <label>Toronto Downtown Clinic</label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="location" value="Toronto North York Pharmacy"/>
+                    <label>Toronto North York Pharmacy</label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="location" value="Markham Centre"/>
+                    <label>Markham Centre</label>
+                </div>
+            </div>   
+            
+        </form><br><br><br>
+        <button onclick="update();" class="next">Update Appointment</button> 
+        <button onclick="update(); window.location.href='cancelation.html'" class="cancel">Cancel</button> 
+        <br>
+        <div style="color: white">end</div>
+    </div>
+</body>
+
+</html>
+

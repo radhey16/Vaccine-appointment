@@ -1,0 +1,39 @@
+
+
+body {
+
+  font-family: sans-serif;
+}
+
+.main_class {
+  /*color: white;*/
+  text-align: center;
+  margin-top:80px;
+
+}
+.second_class {
+
+  text-align: center;
+}
+
+.button_dose {
+  cursor:pointer;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 150%;
+}
+
+.button_book {
+cursor:pointer;
+background-color: #e7e7e7;
+color: black;
+height: 40px;
+border-color: white;
+}

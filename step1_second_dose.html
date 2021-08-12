@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dose 2</title>
+<link rel="stylesheet" href="a4.css">
+<script src="a4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="logo.png" alt="Logo">
+    <div class="left">
+        <div id="step_1">STEP 1
+            <div id="dose_1">2nd Dose</div>
+        </div>
+        <div>
+            <button onClick="window.location.href='page1.html'" class="back" style="margin-top: 107%;">&#8592; Back</button>
+        </div>
+    </div>
+    <div class="right">
+        <form id="form">
+            <strong>Which vaccine did you get for your first dose?</strong>
+            <p>Find the vaccine type in your first dose confirmation email or on your vaccination receipt.</p>
+            <div>
+                <div class="grey_radio">
+                    <input type="radio" name="dose_type" value="AstraZeneca"/>
+                    <label>AstraZeneca
+                    </label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="dose_type" value="Moderna"/>
+                    <label>Moderna
+                    </label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="dose_type" value="Pfizer"/>
+                    <label>Pfizer</label>
+                </div>
+            </div><br>
+            <label for="1st_dose_date" style="font-weight: bold;">When did you get dose 1 of the COVID-19 vaccine?</label><br>
+            <p>Find the date in your first dose confirmation email or on your vaccination receipt.</p>
+            <input type="text" id="1st_dose_date" placeholder="Ex: 1997/05/29"/>
+            <br><br>
+            <label for="postal_code" style="font-weight: bold;">Postal Code</label><br>
+            <p>
+                If you do not have one or live in a recently built neighbourhood,
+                use the postal code of a shelter, library, or other community
+                space in your area.
+            </p>
+            <input type="text" id="postal_code" placeholder="Ex: A1A 1A1"/>
+            <br><br>
+            <label for="date_of_birth" style="font-weight: bold;">Date of Birth</label><br>
+            <p></p>
+            <input type="text" id="date_of_birth" placeholder="Ex: 1997/05/29"/>
+            <br><br>
+            <strong>Do you identify as First Nations, Inuit, or Métis?</strong>
+            <p>If you are a non-Indigenous partner or household member of someone in this group, select “Yes.”</p>
+            <div>
+                <span>
+                    <input type="radio" name="identity" value="YES"/>
+                    <label>YES</label>
+                </span>
+                <span>
+                    <input type="radio" name="identity" value="NO"/>
+                    <label>NO</label>
+                </span>
+            </div><br>
+            <strong>Health card type</strong>
+            <p>Your answer does not affect your eligibility, but it does affect how you can book.</p>
+            <div>
+                <div class="grey_radio">
+                    <input type="radio" name="health_card_type" value="Green Ontario photo health card (expired cards accepted)"/>
+                    <label>Green Ontario photo health card (expired cards accepted)</label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="health_card_type" value="Red and white Ontario health card"/>
+                    <label>Red and white Ontario health card</label><br>
+                </div>
+                <div class="grey_radio">
+                    <input type="radio" name="health_card_type" value="No Ontario health card"/>
+                    <label>No Ontario health card</label>
+                </div>
+            </div>    
+        </form><br><br>
+        <button onclick="second_dose(); window.location.href='step2_second_dose.html'" class="next">Next</button> 
+        <br>
+        <div style="color: white">end</div>
+    </div>
+</body>
+</html>
